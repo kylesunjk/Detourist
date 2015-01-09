@@ -431,11 +431,7 @@
         NSString *currentPostString = [NSString stringWithFormat:@"%f,%f",model.coordinate2D.latitude,model.coordinate2D.longitude];
         [self.waypointStrings1 addObject:currentPostString];
     }
-    
-    
-  //          }
-//            if (self.waypointStrings.count > 1) {
-//    for (int i=0; i<3; i++) {
+
         NSDictionary *query = @{ @"sensor" : @"false",
                                  @"waypoints" : self.waypointStrings1 };
         MDDirectionService *mds = [[MDDirectionService alloc] init];
@@ -446,28 +442,10 @@
     NSDictionary *query2 = @{ @"sensor" : @"false",
                              @"waypoints" : self.waypointStrings2 };
     mds = [[MDDirectionService alloc] init];
-//    SEL selector = @selector(addDirections:withColor:);
     [mds setDirectionsQuery:query2
                withSelector:selector
                withDelegate:self];
-//    NSDictionary *query3 = @{ @"sensor" : @"false",
-//                             @"waypoints" : self.waypointStrings3 };
-//    mds = [[MDDirectionService alloc] init];
-////    SEL selector = @selector(addDirections:withColor:);
-//    [mds setDirectionsQuery:query3
-//               withSelector:selector
-//               withDelegate:self];
-//    }
 
-//            }else{
-//                NSLog(@"No route created, only %lu", (unsigned long)self.waypoints.count);
-//            }
-
-//        }
-        //        [self addMapAnnotation];
-
- //   }
-    
 }
 - (IBAction)showUppMenu:(id)sender {
     [self hiddenUppMenu];
@@ -518,15 +496,11 @@
             self.numd++;
         }
         else {
- //           polyline.strokeColor = [UIColor colorWithRed:195/255 green:194/255 blue:192/255 alpha:1.0];
+
             polyline.strokeColor = [UIColor grayColor];
             self.numd++;
         }
-//        else{
-//            polyline.strokeColor = [UIColor blueColor];
-//            self.numd++;
-//        }
-//        polyline.strokeColor = [UIColor colorWithRed:arc4random() % 255 green:arc4random() % 255 blue:arc4random() % 255 alpha:1.0];
+
         polyline.strokeWidth = 8;
         polyline.map = self.mapView;
         [self.polylineArray addObject:polyline];

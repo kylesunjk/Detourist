@@ -74,6 +74,8 @@
 		279512C71A2A29CD00714F4F /* mapInfo_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 279512C31A2A29CD00714F4F /* mapInfo_02.png */; };
 		279512C81A2A29CD00714F4F /* mapInfo_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 279512C41A2A29CD00714F4F /* mapInfo_03.png */; };
 		279512C91A2A29CD00714F4F /* mapInfo_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 279512C51A2A29CD00714F4F /* mapInfo_04.png */; };
+		F3F5764A1A5F69DE005D0600 /* HackBottomSlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F576481A5F69DE005D0600 /* HackBottomSlideMenuViewController.m */; };
+		F3F5764B1A5F69DE005D0600 /* HackBottomSlideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3F576491A5F69DE005D0600 /* HackBottomSlideMenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +173,9 @@
 		279512C31A2A29CD00714F4F /* mapInfo_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapInfo_02.png; sourceTree = "<group>"; };
 		279512C41A2A29CD00714F4F /* mapInfo_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapInfo_03.png; sourceTree = "<group>"; };
 		279512C51A2A29CD00714F4F /* mapInfo_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapInfo_04.png; sourceTree = "<group>"; };
+		F3F576471A5F69DE005D0600 /* HackBottomSlideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HackBottomSlideMenuViewController.h; path = HackBottomSlideMenu/HackBottomSlideMenuViewController.h; sourceTree = "<group>"; };
+		F3F576481A5F69DE005D0600 /* HackBottomSlideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HackBottomSlideMenuViewController.m; path = HackBottomSlideMenu/HackBottomSlideMenuViewController.m; sourceTree = "<group>"; };
+		F3F576491A5F69DE005D0600 /* HackBottomSlideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HackBottomSlideMenuViewController.xib; path = HackBottomSlideMenu/HackBottomSlideMenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +251,7 @@
 		2777419E1A29ACA3008C2024 /* Hack */ = {
 			isa = PBXGroup;
 			children = (
+				F3F576461A5F6996005D0600 /* HackBottomSlideMenu */,
 				278F9AFB1A2AD0A600DFA0CE /* Functions.h */,
 				278F9AFC1A2AD0A600DFA0CE /* Functions.m */,
 				278F9AFD1A2AD0A600DFA0CE /* UIBufferedImageView.h */,
@@ -345,6 +351,16 @@
 				277741FB1A29F365008C2024 /* JEECollectView.m */,
 			);
 			path = CollectCell;
+			sourceTree = "<group>";
+		};
+		F3F576461A5F6996005D0600 /* HackBottomSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F3F576471A5F69DE005D0600 /* HackBottomSlideMenuViewController.h */,
+				F3F576481A5F69DE005D0600 /* HackBottomSlideMenuViewController.m */,
+				F3F576491A5F69DE005D0600 /* HackBottomSlideMenuViewController.xib */,
+			);
+			name = HackBottomSlideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,6 +475,7 @@
 				278F9ADF1A2AB9DA00DFA0CE /* Vector Smart Object copy 10.png in Resources */,
 				279512BB1A2A11C600714F4F /* suntect.jpg in Resources */,
 				279512C91A2A29CD00714F4F /* mapInfo_04.png in Resources */,
+				F3F5764B1A5F69DE005D0600 /* HackBottomSlideMenuViewController.xib in Resources */,
 				279512C11A2A264800714F4F /* Layer 4 copy.png in Resources */,
 				278F9AED1A2AB9F400DFA0CE /* galleryOverlay.jpg in Resources */,
 			);
@@ -485,6 +502,7 @@
 				278F9AD71A2A690F00DFA0CE /* FavouriteViewController.m in Sources */,
 				277741D11A29B0BD008C2024 /* AnnotationModel.m in Sources */,
 				277741A81A29ACA3008C2024 /* ViewController.m in Sources */,
+				F3F5764A1A5F69DE005D0600 /* HackBottomSlideMenuViewController.m in Sources */,
 				277741F41A29EF12008C2024 /* Landmark.m in Sources */,
 				278F9AF71A2ACE4C00DFA0CE /* PMIAvatarBrowser.m in Sources */,
 				277741A51A29ACA3008C2024 /* AppDelegate.m in Sources */,
